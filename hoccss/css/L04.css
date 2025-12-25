@@ -1,0 +1,4 @@
+/* ~  > . # */
+.todos input:checked ~ span {
+    text-decoration: line-through;
+}

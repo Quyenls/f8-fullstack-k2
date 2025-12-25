@@ -20,6 +20,13 @@ h3 {
 .wrapper .title{
     color:green;
 } */
- .box > .title {
+ /* .box > .title {
     color:green;
- }
+ } */
+.menu > li >a {
+    color:green;
+}
+.menu ul a{
+    color: red;
+     ;
+}
