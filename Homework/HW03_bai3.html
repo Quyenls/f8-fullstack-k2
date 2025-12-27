@@ -1,62 +1,47 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Form Login</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-
-<form>
-  <div class="row">
-    <label>Username:</label>
-    <input type="text">
-  </div>
-
-  <div class="row">
-    <label>Password:</label>
-    <input type="password">
-  </div>
-
-  <div class="row">
-    <label>City of Employment:</label>
-    <input type="text">
-  </div>
-
-  <div class="row">
-    <label>Web server:</label>
-    <select>
-      <option>-- Choose a server --</option>
-      <option>A</option>
-      <option>b</option>
-      <option>c</option>
-    </select>
-  </div>
-
-  <div class="row">
-    <label>Please specify your role:</label>
-    <div class="options">
-      <input type="radio" name="role"> Admin <br>
-      <input type="radio" name="role"> Engineer <br>
-      <input type="radio" name="role"> Manager <br>
-      <input type="radio" name="role"> Guest
+  <form>
+    <div>
+      <label for="username">username</label>
+      <input type="text">
     </div>
-  </div>
-
-  <div class="row">
-    <label>Single Sign-on to the following:</label>
-    <div class="options">
-      <input type="checkbox"> Mail <br>
-      <input type="checkbox"> Payroll <br>
-      <input type="checkbox"> Self-service
+    <div>
+      <label for="password">password</label>
+      <input type="password">
     </div>
-  </div>
-
-  <div class="buttons">
-    <button type="submit">Login</button>
-    <button type="reset">Reset</button>
-  </div>
-</form>
-
+    <div>
+      <label for="city-of-employment">city-of-employment</label>
+      <input type="text">
+    </div>
+    <div>
+      <label> Web server</label>
+      <select name="server" id="server">
+        <option value="0">-Choose a server-</option>
+        <option value="1">-Choose a server1-</option>
+        <option value="2">-Choose a server2-</option>
+      </select>
+    </div>
+    <div>
+      <label for="please">please... </label>
+      <input type="radio" >            admin <br>
+      <input type="radio" >           engineer<br>
+      <input type="radio" >manager<br>
+      <input type="radio" >guest
+    </div>
+    <div>
+      <label for="single">single... </label>
+      <input type="checkbox" >            mail <br>
+      <input type="checkbox" >           payroll<br>
+      <input type="checkbox" >selff
+    </div>
+    <button>Login</button>
+    <button reset>reset</button>
+  </form>
 </body>
 </html>
