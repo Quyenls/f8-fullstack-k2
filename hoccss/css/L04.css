@@ -48,7 +48,7 @@ p::first-line{
     color:aqua
 } */
  /* 1. hover , active , focus */
- .btn:hover {
+ /* .btn:hover {
     background: green;
  }
  .btn:active {
@@ -56,4 +56,13 @@ p::first-line{
  }
  .btn:focus{
     background:yellow;
+ } */
+/* .btn:disabled{
+    background:green;
+} */
+input[type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+ }
+ input[type="checkbox"]:checked:disabled ~ span {
+    color:gray;
  }

@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  padding: 30px;
+}
+
+.faq {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+/* Ẩn checkbox */
+.faq-item input {
+  display: none;
+}
+
+/* Tiêu đề */
+.faq-title {
+  display: flex;
+  align-items: center;
+  background: #e65c2a;
+  color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Icon */
+.faq-title .icon {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+/* Nội dung */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Khi checked → mở */
+.faq-item input:checked ~ .faq-content {
+  max-height: 500px;
+  padding: 20px;
+}
+
+/* Đổi icon khi mở */
+.faq-item input:checked + .faq-title .icon {
+  transform: rotate(45deg); /* + thành x */
+}

@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  background-image: url("https://i.ytimg.com/vi/x0fSBAGBrOQ/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+/* LỚP PHỦ TOÀN MÀN HÌNH */
+.overlay {
+  position: fixed;
+  inset: 0; /* top right bottom left = 0 */
+  background: rgba(0, 0, 0, 0.4); /* xám toàn bộ */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Card ở giữa */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+/* Logo trái */
+.logo {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+}
+
+/* JS phải */
+.js-text {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 120px;
+  font-weight: bold;
+  color: #61dafb;
+}
